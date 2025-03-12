@@ -6,16 +6,21 @@
 		"lib": ["es2023"],
 		"module": "nodenext",
 		"target": "ESNext",
-		
+
 		"strict": true,
 		"esModuleInterop": true,
 		"skipLibCheck": true,
 		"moduleResolution": "nodenext",
-		
+
 		"rootDir": "./src",
 		"outDir": "./dist",
-		
-		"baseUrl": "./src"
+
+		"baseUrl": "./src",
+		"paths": {
+			"@settings/*": ["./settings/*"],
+			"@routes/*": ["./routes/*"],
+			"@functions/*": ["./functions/*"]
+		}
 	},
 	"extends": "@tsconfig/node20/tsconfig.json"
 }
